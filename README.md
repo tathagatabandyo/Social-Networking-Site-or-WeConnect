@@ -38,8 +38,8 @@ A social networking site is an online platform that allows users to create a pub
 # User Send Message any other User Interface :
 ![User Send Message any other User](https://user-images.githubusercontent.com/48715906/176604259-ad8dd5ce-2b9c-4b62-a3b5-0d77db85b938.png)
 
-# Memu bar Interface :
-![Memu bar](https://user-images.githubusercontent.com/48715906/176604354-337e0c26-4e4a-4f6f-8bfb-afbbd5702d45.png)
+# Menu bar Interface :
+![Menu bar](https://user-images.githubusercontent.com/48715906/176604709-1559ca22-9283-4ac9-b40d-1f6d5b7553de.png)
 
 # Search Friends Interface :
 ![searching](https://user-images.githubusercontent.com/48715906/176604431-14880a6b-6aa9-4d03-b94b-d71ef42cc522.png)
