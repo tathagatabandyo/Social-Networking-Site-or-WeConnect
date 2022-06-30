@@ -1,0 +1,16 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+# Return 404 if original request is .php
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+#RewriteRule .* - [L,R=404]
+
+RewriteRule ^ 404.html [L]
+
+php_value upload_max_filesize 1000M
+php_value post_max_size 1020M
+php_value memory_limit 1024M
+php_value max_input_time 600
+php_value max_execution_time 600
