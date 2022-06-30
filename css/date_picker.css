@@ -1,0 +1,213 @@
+.date_picker_icon {
+    user-select: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+    cursor: pointer;
+}
+:root {
+    --date_picket_header_light_bg-color:#1313dc;
+    --date_picket_body_light_bg-color:#fff;
+    --date_picket_year_light_color:#b6b6ff;
+    /* --date_picket_year_light_color:#fff; */
+}
+#year {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--date_picket_year_light_color);
+    transition: color,transform 0.15s,0.12s linear 0s;
+}
+#year:hover {
+    color: #fff;
+}
+#year:active {
+    transform: scale(1.2);
+}
+.p_n_date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.p_n_date span {
+    background-color: transparent;
+    font-size: 32px;
+    border-radius: 50%;
+    transition: transform,background-color 0.12s,0.12s linear 0s;
+}
+.p_n_date .active_css_icon:active {
+    background-color: rgba(0, 0, 0, 0.151);
+    transform: scale(1.3);
+}
+#prev_date {
+    transform: rotate(270deg);
+}
+#next_date {
+    transform: rotate(90deg);
+}
+.data_picker,.week_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.data_picker {
+    position: relative;
+    overflow: hidden;
+}
+.data_picker_span {
+    width: 100%;
+    height: 228px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: transform 0.2s linear 0s;
+}
+.day_no,.week_m {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+.day_no {
+    cursor: pointer;
+    transition: color,background-color 0.3s,0.3s linear 0s;
+}
+#year_list,#month_list {
+    width: 100%;
+    /* display: none; */
+    height: 100%;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    user-select: none;
+}
+#month_list {
+    display: none;
+    z-index: 90;
+}
+.year_list_items,.month_list_items  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px 0px;
+    font-size: 16px;
+    transition: font-weight,transform 0.15s,0.15s linear 0s;
+}
+.year_list_items:not(.year_list_item_active):hover,.month_list_items:not(.month_list_item_active):hover {
+    transform: scale(1.2);
+    font-weight: 600;
+}
+.year_list_item_active,.month_list_item_active {
+    transform: scale(1.4);
+    font-weight: 600;
+}
+#year_list_container,#month_list_container {
+    min-height: 34px;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.data_picker_active_date {
+    background-color: #0d6efd;
+    color: #fff;
+}
+#change_m_y {
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+#change_m_y span {
+    width: 100%;
+    display: block;
+    transition: transform 0.2s linear 0s;
+}
+.in_active {
+    pointer-events: none;
+}
+.cursor_not_allowed {
+    cursor: not-allowed;
+}
+#year_list_container::-webkit-scrollbar,#month_list_container::-webkit-scrollbar {
+    width: 6px;
+}
+#year_list_container::-webkit-scrollbar-track,#month_list_container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+#year_list_container::-webkit-scrollbar-thumb,#month_list_container::-webkit-scrollbar-thumb {
+    background-color: #817272;
+    border-radius: 1px;
+}
+button {
+    box-shadow: none !important;
+    transition: transform 0.05s linear 0s !important;
+}
+button:active {
+    transform: scale(1.2);
+}
+.date_picker_icon:hover {
+    color: #1313dc;
+}
+@media screen and (min-width:310px) and (max-width:575px){
+    #date_modal_dialog {
+        max-width: 300px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+@media screen and (min-width:300px) and (max-width:310px) {
+    .day_no,.week_m {
+        width: 36px;
+        height: 36px;
+    }
+}
+@media screen and (min-width:293px) and (max-width:300px) {
+    .day_no,.week_m {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (min-width:286px) and (max-width:293px) {
+    .day_no,.week_m {
+        width: 34px;
+        height: 34px;
+    }
+}
+@media screen and (max-width:286px) {
+    .day_no,.week_m {
+        width: 33px;
+        height: 33px;
+    }
+}
+@media screen and (max-width:279px) {
+    .day_no,.week_m {
+        width: 32px;
+        height: 32px;
+    }
+}
+@media screen and (max-width:272px) {
+    .day_no,.week_m {
+        width: 31px;
+        height: 31px;
+    }
+}
+@media screen and (max-width:265px) {
+    .day_no,.week_m {
+        width: 30px;
+        height: 30px;
+    }
+}
